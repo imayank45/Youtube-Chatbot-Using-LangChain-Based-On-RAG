@@ -31,16 +31,6 @@ A **Retrieval-Augmented Generation (RAG)**\-based chatbot built using **LangChai
 
 Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   YOUTUBE-CHATBOT-USING-LANGCHAIN-BASED-ON-RAG/  │  ├── notebooks/  │   └── RAG_Using_LangChain.ipynb         # Notebook for experimentation  │  ├── src/  │   ├── chains/  │   │   ├── main_chain.py                 # Main RAG chain combining retriever and LLM  │   │   ├── parallel_chain.py             # RunnableParallel chain for context + question  │   │   └── prompts/  │   │       └── qa_prompt.py              # Custom QA prompt template  │   │  │   ├── utils/  │   │   ├── embeddings.py                 # Handles embedding generation & storage  │   │   ├── retrieval.py                  # Retriever and vector store setup  │   │   ├── text_splitter.py              # Splits transcript into smaller chunks  │   │   └── youtube_loader.py             # Fetches YouTube transcripts  │  ├── youtube-chatbot/                      # (Optional) Data or model folder  │  ├── app.py                                # Streamlit app (main entry point)  ├── .env                                  # Environment variables (API keys)  ├── .gitignore  ├── LICENSE  ├── requirements.txt                      # Python dependencies  └── README.md                             # You’re reading it!   `
 
-🖼️ Screenshot
---------------
-
-You can add your project screenshots in the repository and display them here:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   ![App Screenshot](./assets/screenshot.png)   `
-
-👉 Place your screenshot (e.g., Screenshot 2025-11-11 at 2.09.34 AM.png) in a folder named assets/ inside your root directory:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   assets/   └── screenshot.png   `
 
 ⚙️ Installation & Setup
 -----------------------
@@ -63,7 +53,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 💬 How It Works in Streamlit
 ----------------------------
 
-*   Enter a YouTube video URL
+*   Enter a YouTube video ID
     
 *   The app fetches its transcript
     
